@@ -95,6 +95,24 @@
       z-index:1000;
       top:0;
     }
+    aside .ma{
+        text-align:center;
+        margin-bottom:0;
+        padding:0;
+        letter-spacing:5px;
+        font-size:3rem;
+    }
+    aside .ma .m{
+        color:#4CAF50;
+        font-size:2.5em;
+    }
+    aside .ma .a{
+        color:blue;
+    }
+    aside .ma .j{
+        color:red;
+        font-size:2em;
+    }
     aside .hide{
       transform: translatex(-100%);
     }
@@ -103,16 +121,21 @@
     }
 
     aside .nav{
+        padding:10px;
+        margin :0;
     display:flex;
       text-decoration: none;
       color: white;
       background-color: #000040;
-      padding: 10px;
+      
       border-radius: 5px;
       text-align:center;
       align-items: center;
       justify-content:center;
       transition: all 0.3s ease;
+    }
+     a:hover{
+        transform:scale(1.1);
     }
     aside .fab{
     
@@ -239,7 +262,9 @@
             }
             form textarea {
             font-family:"Font Awesome 6 Free";
-            font-size:3em;
+            font-style:italic;
+            font:small;
+            font-size:1em;
       width:100%;
       padding: 10px;
       border-radius: 5px;
@@ -248,9 +273,10 @@
       height :380px;
       color:white;
       margin-bottom:10px;
-      resize:vertical;
-      font-size:1rem;
+    
+      
       margin-right:15px;
+      text-decoration :none;
 
     }
     form button{
@@ -264,6 +290,43 @@
         cursor:pointer;
         transition : background-color 0.3s;
     }
+    .main-content .comm{
+        margin-top:10px;
+        align-items: center;
+        width:60%;
+        height:20%;
+        margin-right:20%;
+        margin-left:20%;
+        background-color:#fff;
+        border-radius:0.5em;
+    }
+    .main-content .comm .age{
+        text-align:left;
+        height:auto;
+        text-decoration:none;
+        color:black;
+        padding:5px 0;
+        display:flex;
+        align-items:center;
+    }
+
+    .main-content .comm .iol{
+        width:40px;
+        height:40px;
+        border-radius:360px;
+        margin-top:10px;
+        padding:5px 0 0 0;
+        margin-bottom:2em;
+        margin-right: 10px;
+        margin-left:0.8em;
+        object-fit:cover;
+    }
+    .main-content .comm #elzeo {
+        padding-top :0px;
+        margin-bottom:0px ;
+        text-align:center ;
+    }
+
     #comments-container {
             margin: 20px 30px;
         }
@@ -320,13 +383,14 @@
             color:#fff;
             background-color :rgba(0,0,0,0.7);
         }
-        @media (max-width: 400px) {
+        @media (max-width: 600px) {
           .menu-toggle {
             display: block;
     position: fixed;
     top: 10px;
     left: 10px;
     z-index: 1000;
+    margin-bottom:0;
           }
           
           aside {
@@ -369,7 +433,7 @@
             }
           
         }
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
   .main-content img {
     max-width: 120px;
   }
@@ -390,6 +454,7 @@
             <button class="menu-toggle" onclick="toggleSidebar()">&#9776;</button>
               <div class="container">
         <aside>
+            <h2 class="ma"><span class="m">M</span><span class="a">A</span><span class="j">7</span></h2>
             <a id="margin"class="nav"href="http://google.com"><i class="fab fa-google"></i>google</a>
             <a class="nav"href="http://youtube.com"><i class="fab fa-youtube"></i>youtube</a>               
             <a class="nav"href="http://facebook.profile.com"><i class="fab fa-facebook"></i>facebook</a>
@@ -452,6 +517,13 @@
               <textarea placeholder="&#xf086;"></textarea>
               <button type="button" onclick="submitComment()">&#xf124;Send</button>
           </form>
+          <div>
+            <div class="comm">
+                <a  class="age" align="left" href="https://m.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ"><img id="elzeo" class="iol" src="https://lh3.googleusercontent.com/fife/ALs6j_Eld7nzwitnYDb3Gr70Hksm1hEMvq_G5J-TahmOXmRWyZqLZt0ZZ_GeXfocE8jVNEN8Phy4IYeufVLFy3dHkRFszZ9yBDUVEL8jkBIBPqk1kDcePirHvFg6oUVla4YyBq9vzS3lqr83TH4hCvqbGFhCLbmkgH-DXRNOlNiVoVIJnRK1UrWaeYFXy2VdeUlqqm7mMTKHf0aOHdgcC986eXeh4SahDpm_5ZZoPt-MeVi2tdN-CtjPLbQZrjjWpwx_kAPE78WcYtDTBb8XPTJIMmZFCnKKf464ltZZZmZFV3O-G-btV_GK9KCSdNENpsHY37Ksr5vAL2PVzyknSk38K1WjIYOP4RKQiPz9509b7T8G6Ybg1njVz-4qVMFPlgmmdf8EkYZ5LhGArXTxhPLUcZ9YEPWgHMJ58CmTG5VzrcA-rYjtPN75vBlgTVJ6HNhI6osWfJNb6orMcen2SXbuq7cYJXq-jP0LhSfsOlGUAegpM_8LP-oWcWjfJQH_EI-qd--TCAnEu5HeP1G0htfuMe7hZ9X71ppghQ0IcrJuyX2fbpeYsdANfEswOTgS0-9HqWOZZ7-HKT5nzCKUcGW2TWPbXZ-jW87Hm96pwJRD6l3IiK951nv0yQLgKaVCdnDBhtfApygSqElc3W6w11SH5unPTZavwAjNXtwW4TwThlLuEQGdKTL1vJCugvdJkoi0ndHOaWpC-Yfe1X7le3BWoU33PD37JRznX-OT1mKqr0pZJiNDRHe085b0rmmnyYaOqK_PtJAAWVmIaNNL2u6BCmflBjEvkTdwr_gxsCLXna61O48X_XoZ2_6n0QSI29T48S627itNieaN_C9Zf7Z-fgubPPrOVRAR9pLUbR0Ph0T4z7DEZKKsinvv1zA69UcGghdK2bhj-66lQTive4jvCSJenAq01XdGTf-JtP4JBmEkGLJsheLmm6jIklXQSB1afFjxT2jthf56Fg1O9hlm7B3WLpNdt5rbpw8nRjI-3YjZUcjGHkYSz7rhmK30AtikYEF7gvl7hwcjvKLronKPvut1m67wzPXOyhguoy4rioJIGsH5zfLnzKCefpe5wo0VszIDgwz4l6wMuBjip9YjLQapfC4Hd_GL5eY3lr3cMNKUpcqw3cPYhQIkOpbZ7O73Mp-T_JMOde9CBLsoEEt16BOvZm5l3vnoonF2AInDO2_nHbLz9KKEpDOjJi2I5Ik6krQscxVw0HIFXant8_8buTn-lKpvDFettWBqwVGda4CFIzCgQa4pFwP4oPpHMORzfZcmkuNT6sheCItBaMEF7syteT6GGlcrb8K_iMKxOKRVzxxSuADeoLF6d99ZjQYgJT-eb4wJLfYTT_tSNicFeRYAqgQT5tQCc5D2k3Bm1kakq82JnNm4T3b1l0KSE2lomdmjb5dq9Dx-8yRB5JXk6__PQn3TFNw6aVKt2rsF5uCg06HDWaKgg5cQ8jq6goigVDRlwfwiWRS_mt-VB4-Oc4yVK_2-akCozkkKZqq3DY2h497CPlMUKTh_sbDcxtwlgO-RvqZ4Z9AK0ozQjjHq2qs5ZdAfPG93Y53WNnVaq4TtTk2ZJFH0cWluTpfbZ4fktpeS6as-Q8GQ4nFsblqnxRv4u6afpX5cwaEEEWTD_YMM82XPg-RVrFxNxQ=w262-h196-p-k-nu"><strong>Mohamed Ahmed</strong></a>
+                <p>this project is very good I wish to support my web page</p>
+
+            </div>
+          </div>
         </div>
 
         </main>
@@ -547,7 +619,8 @@ const text = "WELCOME TO MA7 WEB";
                     },
                     body: JSON.stringify({ 
                         text: commentText,
-                        author: 'Visitor' // يمكنك تغيير هذا أو جعله حقل إدخال
+                        author: 'Visitor', 
+                        font:small// يمكنك تغيير هذا أو جعله حقل إدخال
                     }),
                 });
 
